@@ -1,0 +1,139 @@
+.app-container {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+.app-container h1 {
+  text-align: center;
+  color: #3498db;
+  margin-bottom: 2rem;
+}
+
+.content-container {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .content-container {
+    flex-direction: column;
+  }
+}
+
+/* Product Section */
+.product-section {
+  flex: 1;
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.product-list {
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+
+.product-list table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+}
+
+.product-list th, 
+.product-list td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.product-list th {
+  background-color: #f1f5f9;
+  font-weight: 600;
+}
+
+.product-list tr:hover {
+  background-color: #f8fafc;
+}
+
+.product-list input[type="checkbox"] {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.place-order-btn {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.place-order-btn:hover {
+  background-color: #2980b9;
+}
+
+.place-order-btn:disabled {
+  background-color: #bdc3c7;
+}
+
+/* Package Section */
+.package-section {
+  flex: 1;
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.package-list {
+  margin-top: 1rem;
+}
+
+.package {
+  background-color: #f8fafc;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid #3498db;
+  transition: transform 0.3s ease;
+}
+
+.package:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.package h3 {
+  color: #3498db;
+  margin-bottom: 0.5rem;
+}
+
+.package p {
+  margin-bottom: 0.5rem;
+}
+
+.package strong {
+  color: #2c3e50;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .app-container {
+    padding: 1rem;
+  }
+  
+  .product-list th, 
+  .product-list td {
+    padding: 8px 10px;
+    font-size: 0.9rem;
+  }
+}
